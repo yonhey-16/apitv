@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url('tvapi.pgn.png') no-repeat center center fixed; /* fondo corregido */
+    background: url('tvapi.pgn.png') no-repeat center center fixed; /* fondo correcto */
     background-size: cover;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -13,46 +13,53 @@ body {
 }
 
 .container {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6); /* un poco más oscuro para que destaque más */
     padding: 40px 20px;
     border-radius: 20px;
-    width: 300px;
+    width: 320px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    backdrop-filter: blur(4px);
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
 .author {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 20px;
 }
 
 .logo {
-    width: 180px;
+    width: 200px;
     margin: 20px 0;
 }
 
 .description {
     background: #1d3557;
-    padding: 12px 20px;
+    padding: 15px 20px;
     border-radius: 10px;
     margin: 20px 0;
     font-size: 1rem;
+    width: 100%;
 }
 
 .link {
     display: block;
     margin: 10px 0;
-    color: #a8dadc;
+    color: #00b4d8;
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
+}
+
+.link:hover {
+    text-decoration: underline;
 }
 
 .version {
